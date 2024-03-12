@@ -9,6 +9,7 @@ namespace EasyStrategems
 
         [DllImport("user32.dll")]
         public static extern IntPtr SetWindowsHookEx(Int32 idHook, HookDelegate lpfn, IntPtr hmod, Int32 dwThreadId);
+        
         [DllImport("user32.dll")]
         public static extern IntPtr CallNextHookEx(IntPtr hhk, Int32 nCode, IntPtr wParam, IntPtr lParam);
 

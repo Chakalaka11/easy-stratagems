@@ -5,6 +5,7 @@ public class Keyboard
     public static void Send(ScanCodeShort a)
     {
         INPUT[] Inputs = new INPUT[2];
+        
         Inputs[0].type = 1;
         Inputs[0].U.ki.wScan = a;
         Inputs[0].U.ki.dwFlags = KEYEVENTF.SCANCODE;
